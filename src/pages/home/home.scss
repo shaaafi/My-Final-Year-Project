@@ -1,0 +1,26 @@
+page-home {
+    .bg {
+        background-image: url('../assets/imgs/tree44.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    .scroll-content {
+        text-align: center;
+    }
+    .card {
+        background-color: rgba(232, 230, 230, .4);
+        border-radius: 15px;
+    }
+    .item {
+        background-color: rgba(232, 230, 230, 0);
+    }
+    .input {
+        border-bottom: solid white 1px;
+    }
+    h1 {
+        color: white;
+        font-size: 2em;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: light
+    }
+}

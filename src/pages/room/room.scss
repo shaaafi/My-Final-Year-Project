@@ -1,0 +1,13 @@
+page-room {
+    .bg {
+        background-image: url('../assets/imgs/tree44.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    .list {
+        opacity: .8;
+        .item {
+            height: 50px;
+        }
+    }
+}

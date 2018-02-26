@@ -1,0 +1,36 @@
+<!--
+  Generated template for the RegisterPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    <ion-navbar color="primary">
+        <ion-title>register</ion-title>
+    </ion-navbar>
+</ion-header>
+
+
+<ion-content padding class="bg">
+    <ion-list>
+        <ion-item-group>
+            <ion-item-divider color="light">Username</ion-item-divider>
+            <ion-item>
+                <ion-input type="text" name="username" [(ngModel)]="username" placeholder="Give Username Here"></ion-input>
+            </ion-item>
+        </ion-item-group>
+        <ion-item-group>
+            <ion-item-divider color="light">Password</ion-item-divider>
+            <ion-item>
+                <ion-input type="password" name="password" [(ngModel)]="password" placeholder="Give Password Here"></ion-input>
+            </ion-item>
+        </ion-item-group>
+        <ion-item-group>
+            <ion-item-divider color="light">Recovery</ion-item-divider>
+            <ion-item>
+                <ion-input type="text" name="answer" [(ngModel)]="answer" placeholder="Give a password recovery string Here"></ion-input>
+            </ion-item>
+        </ion-item-group>
+    </ion-list>
+    <button ion-button (click)="save()" block>Save</button>
+</ion-content>

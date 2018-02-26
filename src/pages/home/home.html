@@ -1,0 +1,28 @@
+<ion-content class="bg" padding>
+    <h1>Smart Switch Board Using Wireless Technology</h1>
+    <ion-card>
+        <ion-card-header style="color:white">Login Page</ion-card-header>
+        <ion-card-content>
+            <ion-list no-lines>
+                <ion-item>
+                    <ion-label floating style="color:white">Username</ion-label>
+                    <ion-input type="text" [(ngModel)]="username"></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-label floating style="color:white">Password</ion-label>
+                    <ion-input type="password" [(ngModel)]="password"></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-label style="color: white">Keep me signed in?</ion-label>
+                    <ion-checkbox item-right></ion-checkbox>
+                </ion-item>
+                <ion-item>
+                    <p style="color:white">Forgot Password? <a style="color:white"><b>Try to recover</b></a></p>
+                </ion-item>
+                <button ion-button color="primary" block (click)="login()" round>LOGIN</button>
+            </ion-list>
+            <b>OR</b>
+            <button ion-button color="primary" block (click)="register()" round>Register</button>
+        </ion-card-content>
+    </ion-card>
+</ion-content>

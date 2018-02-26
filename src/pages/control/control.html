@@ -1,0 +1,39 @@
+<!--
+  Generated template for the ControlPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+    <ion-navbar color="primary">
+        <ion-title>control</ion-title>
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="bg">
+    <ion-list>
+        <ng-container *ngFor="let ob of dbArray;let i = index">
+            <ion-item *ngIf="(i+1)!=5">
+                {{ob.name}} 
+                <button item-end ion-button small color="primary" (click)="tap(ob.key)">On</button>
+                <button item-end ion-button small color="primary" (click)="tap(ob.key)">Off</button>
+            </ion-item>
+            <ion-item-group *ngIf="(i+1)==5">
+
+                <ion-item>
+                    <ion-label>{{ob.name}}</ion-label>
+                    <ion-range min="0" max="255" step="10">
+                        <ion-label range-left>Off</ion-label>
+                        <ion-label range-right>On</ion-label>
+                    </ion-range>
+                </ion-item>
+
+            </ion-item-group>
+        </ng-container>
+
+    </ion-list>
+
+</ion-content>
